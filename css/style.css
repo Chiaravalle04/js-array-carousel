@@ -1,0 +1,63 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style */
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+    background-color: red;
+    position: relative;
+}
+
+#left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    line-height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    line-height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.container .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visible {
+    display: block;
+}
